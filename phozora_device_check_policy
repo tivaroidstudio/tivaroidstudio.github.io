@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Privacy policy for Phozora Device Check, the Android phone diagnostics app.">
+  <title>Privacy Policy · Phozora Device Check</title>
+  <link rel="icon" type="image/png" href="phozora-icon.png">
+  <link rel="stylesheet" href="privacy.css">
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <img src="phozora-icon.png" width="56" height="56" alt="Phozora Device Check icon">
+      <div><strong>Phozora Device Check</strong><span>Privacy Policy</span></div>
+    </header>
+    <article>
+      <p class="eyebrow">ANDROID APP · com.phozora.devicecheck</p>
+      <h1>Privacy Policy</h1>
+      <p class="date">Effective date: 7 September 2026</p>
+      <p class="lead">Phozora Device Check is a local-first Android diagnostic application. It processes diagnostic readings on your device to perform tests you select.</p>
+
+      <h2>Data processed on your device</h2>
+      <p>The app may process hardware information, sensor samples, battery and memory telemetry, display and touch events, network capability information, GNSS measurements, camera luminance frames, microphone samples, NFC tag technology names, and files in a folder you explicitly select through Android’s Storage Access Framework.</p>
+      <p>Reports, diagnostic history, preferences, and folder-scan results are stored in application-private storage. The app does not retain exact coordinates, camera images, microphone recordings, NFC identifiers, or NFC tag contents. Temporary diagnostic files and audio buffers are removed after use.</p>
+
+      <h2>Permissions</h2>
+      <ul>
+        <li><strong>Camera:</strong> camera opening, frame, and flash-response tests.</li>
+        <li><strong>Microphone:</strong> microphone test and speaker–microphone cross-test.</li>
+        <li><strong>Approximate and precise location:</strong> foreground-only GNSS fix, accuracy, and satellite diagnostics. Exact coordinates are not stored in reports.</li>
+        <li><strong>Physical activity:</strong> step counter and step detector tests, where supported.</li>
+        <li><strong>NFC:</strong> foreground reading of a tag to verify radio response. Tag identity and content are not retained.</li>
+        <li><strong>Vibration:</strong> manual and accelerometer cross-tests.</li>
+        <li><strong>Network state:</strong> local connectivity and validated-network status.</li>
+      </ul>
+      <p>Permissions are requested when a relevant function starts. You can deny or revoke a permission in Android settings. Denial produces an unavailable or not-tested result, not a fabricated hardware failure.</p>
+
+      <h2>Collection, sharing, and third parties</h2>
+      <p>The current release has no user accounts, advertising SDK, analytics SDK, cloud backend, or developer-operated data transfer. The app does not sell or share personal or sensitive data. Google Play’s In-App Review component may communicate with Google Play under Google’s own terms.</p>
+      <p>A report leaves your device only when you explicitly use Android sharing or PDF export. The selected destination app’s privacy practices then apply.</p>
+
+      <h2>Storage Care and Privacy Audit</h2>
+      <p>Storage Care can inspect only a folder you select in Android’s system picker. Deletion requires explicit confirmation. Privacy Audit examines permissions of launcher apps visible under Android package-visibility rules. It does not use <code>QUERY_ALL_PACKAGES</code>, and a permission does not prove that another app collects or transmits data.</p>
+
+      <h2>Retention and deletion</h2>
+      <p>You can delete individual reports or all diagnostic history in the app. Uninstalling the app removes its private local data. You must delete exported files separately from their destination.</p>
+
+      <h2>Children</h2>
+      <p>The app is a general utility and is not designed specifically for children.</p>
+
+      <h2>Security and changes</h2>
+      <p>Local report evidence can be signed with a non-exportable Android Keystore key. This provides local tamper evidence, not identity or manufacturer certification. This policy will be updated if data practices or third-party SDKs change.</p>
+
+      <h2>Publisher contact</h2>
+      <p id="publisher-contact">Publisher name and monitored privacy email must be added before publication.</p>
+    </article>
+    <footer>© <span id="year">2026</span> Phozora Device Check</footer>
+  </main>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
