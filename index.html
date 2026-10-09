@@ -16,7 +16,7 @@ const grid=document.getElementById("app-grid");
 for(const app of (window.TIVAROID_APPS||[])){
  const article=document.createElement("article");article.className="app";article.id=app.id;
  const top=document.createElement("div");top.className="app-top";
- const ico=document.createElement("div");ico.className="app-icon";ico.textContent=app.symbol||"✦";
+ const ico=document.createElement("div");ico.className="app-icon";if(app.icon){const img=document.createElement("img");img.src=app.icon;img.alt=app.name+" app icon";img.width=60;img.height=60;img.style.cssText="width:100%;height:100%;object-fit:contain;border-radius:16px";ico.append(img)}else{ico.textContent=app.symbol||"✦"}
  const badge=document.createElement("span");badge.className="status "+(app.status==="live"?"live":"");badge.textContent=app.status==="live"?"On Google Play":"Coming soon";top.append(ico,badge);
  const category=document.createElement("div");category.className="category";category.textContent=app.category;
  const title=document.createElement("h3");title.textContent=app.name;
