@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Privacy Policy for TivaroSQL Studio, an in-development SQL and NoSQL database client by Tivaroid Studio.">
+  <title>TivaroSQL Studio — Privacy Policy | Tivaroid Studio</title>
+  <link rel="stylesheet" href="../privacy.css">
+  <style>
+    .header a{color:inherit;text-decoration:none}
+    .header a:hover{text-decoration:underline}
+    a{color:#6450d4}
+    .notice{padding:14px 18px;background:#f0edff;border-left:4px solid #765cf2;border-radius:10px;margin:22px 0}
+    .back{display:inline-block;margin-bottom:18px}
+    @media(prefers-color-scheme:dark){a{color:#b6a7ff}.notice{background:#302747;border-left-color:#9a84ff}}
+  </style>
+</head>
+<body>
+<div class="page">
+  <header class="header">
+    <img src="../assets/icons/tivarosqlstudio.svg" width="52" height="52" alt="TivaroSQL Studio icon">
+    <div><strong><a href="../">Tivaroid Studio</a></strong><span>Privacy Policy · TivaroSQL Studio</span></div>
+  </header>
+  <main>
+    <article>
+      <div class="eyebrow">TIVAROID STUDIO · DATABASE TOOLS</div>
+      <h1>TivaroSQL Studio Privacy Policy</h1>
+      <p class="date">Last updated: November 5, 2026</p>
+      <p class="lead">TivaroSQL Studio is a database client designed to connect to databases chosen by the user. The app is currently in development. It does not require a Tivaroid Studio account and is not designed to send your database contents or credentials to a Tivaroid Studio server.</p>
+      <p class="notice"><strong>Development status:</strong> This policy describes the app's current intended behavior. We will review it against the final released build, its permissions and third-party services, and update this page before launch if anything changes.</p>
+
+      <h2>1. Information handled by the app</h2>
+      <p>Depending on which features you use, the app may process the following information on your device:</p>
+      <ul>
+        <li>Database connection profiles, including server addresses, ports, database names, usernames and connection settings.</li>
+        <li>Passwords, API/access tokens, private keys, SSH credentials and other authentication material that you provide for your database connections.</li>
+        <li>SQL queries, query history, saved queries, table and query results, editor tabs and app preferences.</li>
+        <li>SQLite and DuckDB database files, imported CSV/Excel files, exported results and backup files that you create or select.</li>
+      </ul>
+      <p>The app does not currently include a Tivaroid Studio account system, advertising SDK, third-party analytics or behavioral tracking.</p>
+
+      <h2>2. Local storage and security</h2>
+      <p>Connection profiles and app settings are stored locally on your device. When you choose to save credentials, the app is designed to protect them using the operating system's credential storage: Android Keystore on Android and system credential services on supported desktop platforms. Availability and hardware backing of secure storage depend on the device and operating system.</p>
+      <p>Some information, such as SQL query history and open editor content, may be stored locally in the app's WebView storage and is not necessarily encrypted separately. Avoid entering credentials or other secrets directly into saved SQL queries.</p>
+      <p>You can choose not to save a connection password. Protect your device with a screen lock, and do not share exported files containing sensitive information.</p>
+
+      <h2>3. Network connections and third-party services</h2>
+      <p>The app connects to services required by features you explicitly use:</p>
+      <ul>
+        <li><strong>Database and SSH servers you configure:</strong> credentials, queries and relevant connection metadata are sent to those servers as necessary to connect and run commands. These services may process or log data according to their own policies and configuration.</li>
+        <li><strong>Identity providers for optional sign-in:</strong> when using SSO (for example with Snowflake), authentication may take place through your chosen identity provider's sign-in page or service.</li>
+        <li><strong>Cloudflare DNS for MongoDB SRV resolution on Android:</strong> resolving some <code>mongodb+srv://</code> addresses uses Cloudflare's public DNS resolver. DNS queries may disclose the relevant database cluster hostname, not your database password or SQL queries.</li>
+        <li><strong>Google Play:</strong> if in-app purchases or subscriptions are enabled in a future release, Google Play will process those transactions. Tivaroid Studio does not receive your full payment card details from Google Play.</li>
+      </ul>
+      <p>Connections can have different transport security settings depending on the database and user configuration. We recommend encrypted connections with proper certificate verification wherever supported, especially on untrusted networks.</p>
+
+      <h2>4. Imports, exports and backups</h2>
+      <p>When you import, export or back up data, the app works with files you select or create. Files exported from the app remain wherever you save or share them. Connection backups are designed to omit secrets by default; if you explicitly include saved secrets, the backup feature encrypts them using a password you provide.</p>
+      <p>The Android build is configured to disable automatic cloud backup and device-to-device transfer of app data. Manually exported files are outside that restriction and remain under your control.</p>
+
+      <h2>5. Permissions and device authentication</h2>
+      <p>The app may request network access to connect to databases. Optional biometric or screen-lock authentication is handled through the operating system; the app does not receive or store fingerprint or face templates. Google Play Billing functionality may be used if paid features are offered in a future version.</p>
+
+      <h2>6. Data sharing and retention</h2>
+      <p>Tivaroid Studio does not currently operate a backend that receives your database passwords, SQL queries or query results. The app sends the information necessary for your requested connection directly to the external services you select. We do not sell this information.</p>
+      <p>Locally stored information generally remains until you delete it, clear app data or uninstall the app. You may remove saved connections and clear query history within the app. Deleting the app does not delete information you previously exported, nor information retained by external database providers.</p>
+
+      <h2>7. Children's privacy</h2>
+      <p>TivaroSQL Studio is a database administration and development tool. It is not designed for or directed at children.</p>
+
+      <h2>8. Changes to this policy</h2>
+      <p>Because the app is in development, features and related data practices may change. We will publish an updated policy on this page and revise the date above when material changes are made.</p>
+
+      <h2>9. Contact</h2>
+      <p>For privacy questions or requests, contact <a href="mailto:tivaroid.studio@gmail.com">tivaroid.studio@gmail.com</a>.</p>
+      <p><a class="back" href="../#apps">← Back to Tivaroid Studio apps</a></p>
+    </article>
+  </main>
+  <footer>© 2026 Tivaroid Studio. All rights reserved.</footer>
+</div>
+</body>
+</html>
