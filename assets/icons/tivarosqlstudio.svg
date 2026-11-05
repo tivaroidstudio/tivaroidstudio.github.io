@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+<title id="title">TivaroSQL Studio</title><desc id="desc">Database cylinders and an SQL code symbol on a dark blue gradient.</desc>
+<defs>
+  <linearGradient id="background" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#343c91"/><stop offset="1" stop-color="#10293a"/></linearGradient>
+  <linearGradient id="data" x1="0" x2="1"><stop stop-color="#87a8ff"/><stop offset="1" stop-color="#71e5d2"/></linearGradient>
+</defs>
+<rect width="128" height="128" rx="30" fill="url(#background)"/>
+<rect x="13" y="13" width="102" height="102" rx="23" fill="none" stroke="#a9b8ff" opacity=".23" stroke-width="2"/>
+<ellipse cx="64" cy="42" rx="33" ry="12" fill="#1a3d64" stroke="url(#data)" stroke-width="4"/>
+<path d="M31 42v22c0 7 15 13 33 13s33-6 33-13V42" fill="#142e4b" stroke="url(#data)" stroke-width="4"/>
+<path d="M31 64v21c0 7 15 13 33 13s33-6 33-13V64" fill="#142e4b" stroke="url(#data)" stroke-width="4"/>
+<path d="M31 63c0 7 15 13 33 13s33-6 33-13M31 84c0 7 15 13 33 13s33-6 33-13" fill="none" stroke="#71e5d2" stroke-width="2" opacity=".7"/>
+<text x="64" y="66" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="19" text-anchor="middle" font-weight="800" letter-spacing="1.2" fill="#f6faff">SQL</text>
+</svg>
