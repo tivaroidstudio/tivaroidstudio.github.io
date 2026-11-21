@@ -22,3 +22,7 @@ This is a static GitHub Pages site with no backend, analytics or cookies added b
 ## TivaroSQL Studio
 
 The in-development TivaroSQL Studio entry is maintained in `apps.js`. Its public English privacy policy is at `/tivarosqlstudio-privacy/index.html`. Before releasing to Google Play, recheck the published policy against the shipping app build, permissions, SDKs, security settings and Data safety disclosures.
+
+## Tinselvale: Santa's Elf Town
+
+Coming-soon entry in `apps.js` (package `com.tivaroidstudio.santastycoon`, repo `tivaroidstudio/SantasTycoon`). Privacy policy: `/tinselvale-privacy/index.html`. It describes the closed-test builds (offline, no ads, no analytics, optional local reminders). Update it before shipping ads or purchases. When the game is live, set `status: "live"` and add the Google Play URL.
