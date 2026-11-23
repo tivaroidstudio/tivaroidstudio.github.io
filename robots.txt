@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tivaroidstudio.github.io/sitemap.xml

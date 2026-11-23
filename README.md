@@ -21,7 +21,13 @@ This is a static GitHub Pages site with no backend, analytics or cookies added b
 
 ## TivaroSQL Studio
 
-The in-development TivaroSQL Studio entry is maintained in `apps.js`. Its public English privacy policy is at `/tivarosqlstudio-privacy/index.html`. Before releasing to Google Play, recheck the published policy against the shipping app build, permissions, SDKs, security settings and Data safety disclosures.
+Live on Google Play (`tivaro.sql.studio`). Card in `apps.js` (with `site` → product page).
+
+- Product and SEO pages: `/tivarosql-studio/` (EN), `/tivarosql-studio/pl/` (PL), one page per database engine and guides.
+  They are generated – edit `tools/build_sqlstudio.py`, then run `python3 tools/build_sqlstudio.py`
+  (also rewrites `sitemap.xml` and `robots.txt`). Styles: `tivarosql-studio/sql.css`, images: `tivarosql-studio/img/`.
+- Privacy policy: `/tivarosqlstudio-privacy/`. The app links to `/TivaroSQLStudio/privacy-policy`, which redirects there – keep it.
+- Every claim on these pages must match the shipping app; recheck after feature changes.
 
 ## Tinselvale: Santa's Elf Town
 
